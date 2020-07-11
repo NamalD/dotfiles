@@ -1,2 +1,3 @@
 map Gtf :vsc Edit.GoToFile<CR>
 map Gtt :vsc Edit.GoToType<CR>
+map Rat :vsc TestExplorer.RunAllTests<CR>
