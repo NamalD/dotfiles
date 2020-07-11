@@ -2,4 +2,4 @@
 
 ## Windows
 
-Place in %ROAMING%/alacritty
+Place in `%ROAMING%/alacritty`
