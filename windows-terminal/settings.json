@@ -6,10 +6,7 @@
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{6cb457b9-ed51-4781-b602-9a5ea889a249}",
-    // You can add more global application settings here.
-    // To learn more about global settings, visit https://aka.ms/terminal-global-settings
-    // If enabled, selections are automatically copied to your clipboard.
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
     "copyOnSelect": false,
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
@@ -20,7 +17,7 @@
     "profiles": {
         "defaults": {
             // Put settings here that you want to apply to all profiles.
-            "colorScheme": "One Half Dark",
+            "colorScheme": "nord",
             "fontFace": "Fira Code Retina",
             "fontSize": 12,
             "antialiasingMode": "cleartype"
@@ -49,16 +46,65 @@
             {
                 "guid": "{6cb457b9-ed51-4781-b602-9a5ea889a249}",
                 "hidden": false,
-                "name": "Bash",
+                "name": "Git Bash",
                 "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
                 "startingDirectory": "%HOME%",
                 "icon": ""
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-    "schemes": [],
+    "schemes": [
+        {
+            "name": "Andromeda",
+            "black": "#000000",
+            "red": "#cd3131",
+            "green": "#05bc79",
+            "yellow": "#e5e512",
+            "blue": "#2472c8",
+            "purple": "#bc3fbc",
+            "cyan": "#0fa8cd",
+            "white": "#e5e5e5",
+            "brightBlack": "#666666",
+            "brightRed": "#cd3131",
+            "brightGreen": "#05bc79",
+            "brightYellow": "#e5e512",
+            "brightBlue": "#2472c8",
+            "brightPurple": "#bc3fbc",
+            "brightCyan": "#0fa8cd",
+            "brightWhite": "#e5e5e5",
+            "background": "#262a33",
+            "foreground": "#e5e5e5"
+        },
+        {
+            "name": "nord",
+            "black": "#3b4252",
+            "red": "#bf616a",
+            "green": "#c0e7b6",
+            "yellow": "#ebcb8b",
+            "blue": "#81a1c1",
+            "purple": "#b48ead",
+            "cyan": "#88c0d0",
+            "white": "#e5e9f0",
+            "brightBlack": "#4c566a",
+            "brightRed": "#bf616a",
+            "brightGreen": "#a3be8c",
+            "brightYellow": "#ebcb8b",
+            "brightBlue": "#81a1c1",
+            "brightPurple": "#b48ead",
+            "brightCyan": "#8fbcbb",
+            "brightWhite": "#eceff4",
+            "background": "#2e3440",
+            "foreground": "#d8dee9"
+        }
+    ],
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
     // To learn more about keybindings, visit https://aka.ms/terminal-keybindings
@@ -93,6 +139,18 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "newTab",
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "closeTab",
+            "keys": "ctrl+w"
+        },
+        {
+            "command": "nextTab",
+            "keys": "ctrl+tab"
         }
     ]
 }
