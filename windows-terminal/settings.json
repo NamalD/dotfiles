@@ -6,7 +6,7 @@
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "defaultProfile": "{6cb457b9-ed51-4781-b602-9a5ea889a249}",
     "copyOnSelect": false,
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
@@ -23,6 +23,22 @@
             "antialiasingMode": "cleartype"
         },
         "list": [
+            {
+                "guid": "{6cb457b9-ed51-4781-b602-9a5ea889a249}",
+                "hidden": false,
+                "name": "Git Bash",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "startingDirectory": "%HOME%",
+                "icon": "",
+                "tabTitle": "Git Bash",
+                "suppressApplicationTitle": true
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
             {
                 // Make changes here to the powershell.exe profile.
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -42,20 +58,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{6cb457b9-ed51-4781-b602-9a5ea889a249}",
-                "hidden": false,
-                "name": "Git Bash",
-                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-                "startingDirectory": "%HOME%",
-                "icon": ""
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
