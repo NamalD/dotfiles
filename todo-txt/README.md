@@ -2,10 +2,6 @@
 
 ## Install
 
-### Bash
-
-Run `setup.sh`
-
-### Fish
-
-Run `setup.fish`
+``` bash
+./install.sh
+```
