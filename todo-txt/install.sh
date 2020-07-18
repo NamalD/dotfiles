@@ -3,7 +3,7 @@ function add_to_config {
 }
 
 # Download release
-$(gh api repos/todotxt/todo.txt-cli/releases/latest | jq '.assets[] | select(.content_type=="application/zip") | .browser_download_url' | xargs echo curl -L --output todo-txt.zip)
+$(gh api repos/todotxt/todo.txt-cli/releases/latest | jq '.assets[] | select(.content_type=="application/zip") | .browser_download_url' | xargs echo curl -k -L --output todo-txt.zip)
 
 # Extract zip
 unzip -j todo-txt.zip -d todo-txt 
