@@ -26,6 +26,9 @@ set RDP_HEIGHT=1405
 # Git
 export GIT_PS1_SHOWDIRTYSTATE=1
 
+# Welcome message
+todo ls
+
 # Get count of remaining todo items for prompt
 todo_count () {
     local line_count=$(todo ls | wc -l);
