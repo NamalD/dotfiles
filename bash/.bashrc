@@ -27,6 +27,7 @@ set RDP_HEIGHT=1405
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Welcome message
+scoop status
 todo ls
 
 # Get count of remaining todo items for prompt
