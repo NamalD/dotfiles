@@ -1,0 +1,10 @@
+" Relative line numbers
+set relativenumber
+set number
+
+" System clipboard
+set clipboard=unnamed
+
+" IDEA enhancements
+set ideajoin
+set clipboard+=ideaput
