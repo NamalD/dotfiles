@@ -1,8 +1,12 @@
 # Aliases
-alias grep rg
-alias ls exa
 alias bat batcat
 alias cat batcat
+alias cp "cp -iv"
+alias find fdfind
+alias grep rg
+alias ls exa
+alias mv "mv -iv"
+alias rm "rm -Iv"
 
 # Welcome message
 set fish_greeting
