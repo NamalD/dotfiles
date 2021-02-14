@@ -15,3 +15,4 @@ let mapleader="<Space>"
 
 " Alternate escape key
 inoremap jj <Esc>
+
