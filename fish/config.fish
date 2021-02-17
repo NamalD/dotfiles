@@ -11,3 +11,8 @@ alias rm "rm -Iv"
 
 # Welcome message
 set fish_greeting
+
+# Git Prompt
+set -g GIT_PS1_SHOWDIRTYSTATE 1
+set -g GIT_PS1_SHOWSTASHSTATE 1
+set -g GIT_PS1_SHOWUNTRACKEDFILES 1
