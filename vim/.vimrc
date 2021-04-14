@@ -11,8 +11,11 @@ filetype plugin indent on
 set clipboard=unnamed
 
 " Leader
-let mapleader="<Space>"
+let mapleader=" "
 
 " Alternate escape key
 inoremap jj <Esc>
+
+" File explorer
+nnoremap <leader>e :Explore<CR>
 
