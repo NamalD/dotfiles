@@ -19,3 +19,6 @@ inoremap jj <Esc>
 " File explorer
 nnoremap <leader>e :Explore<CR>
 
+" Relative line numbers
+set number
+set relativenumber
