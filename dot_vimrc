@@ -22,6 +22,3 @@ nnoremap <leader>e :Explore<CR>
 " Relative line numbers
 set number
 set relativenumber
-
-" Change cursor in insert mode
-autocmd InsertEnter,InsertLeave * set cul!
