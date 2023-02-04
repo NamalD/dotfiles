@@ -13,7 +13,7 @@ set incsearch
 map Q gq
 
 " IDE actions
-map <leader>ne <Action>(GoToNextError)
+map <leader>ne <Action>(GotoNextError)
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
