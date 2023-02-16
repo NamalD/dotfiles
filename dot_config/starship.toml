@@ -5,6 +5,9 @@ success_symbol = "=>(bold green)"
 disabled = true
 show_notifications = true
 
+[kubernetes]
+disabled = false
+
 [status]
 disabled = true
 

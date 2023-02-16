@@ -11,6 +11,20 @@ New-Alias -Name which -Value get-command
 Set-PSReadLineKeyHandler -Chord UpArrow -Function HistorySearchBackward
 
 # Helper functions
+## kubernetes contexts
+function kdev {
+    k config use-context dev
+}
+
+function kprod {
+    k config use-context prod
+}
+
+function koldprod {
+    k config use-context old-prod
+}
+
+## touch
 Function touch {
     [CmdletBinding()]
     param (
