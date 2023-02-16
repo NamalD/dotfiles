@@ -9,24 +9,38 @@ set scrolloff=5
 " Do incremental searching.
 set incsearch
 
-" Don't use Ex mode, use Q for formatting.
-map Q gq
 
-" IDE actions
+" Configuration
+command! Reload source ~/.ideavimrc
+command! Config e C:/user/namal.dayarathna/.ideavimrc
+
+" IDEA enhancements
+set ideajoin
+set clipboard+=ideaput
+
+" Git
+command! Pull action Git.Pull
+command! Push action Git.Push
+
+" Builds
+map <leader>r <Action>(Run)
+command! Clean action CleanSolutionAction
+
+" Find and replace
+map <leader>f <Action>(Find)
+
+" Files
+map <leader>n <Action>(NewFile)
+
+" Error Navigation
+map <leader>ne <Action>(ReSharperGotoNextErrorInSolution)
 map <leader>ne <Action>(GotoNextError)
 
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
+" Windows
+map <leader>wg <Action>(ActivateVersionControlToolWindow)
 
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
+" Refactor
+map <leader>rr <Action>(RenameElement)
 
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
-
-
-" Find more examples here: https://jb.gg/share-ideavimrc
-set ideajoin
-
-map <leader>ra <Action>(RunAnything)
+" DataGrip
+map <leader>cs <Action>(Console.Jdbc.ChooseSchema)
