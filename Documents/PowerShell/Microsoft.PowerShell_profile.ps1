@@ -1,3 +1,15 @@
+# Aliases
+del alias:cd -Force
+
+New-Alias -Name cd -Value z
+New-Alias -Name cz -Value chezmoi
+New-Alias -Name k -Value kubectl
+New-Alias -Name vi -Value nvim
+New-Alias -Name which -Value get-command
+
+# Key binds
+Set-PSReadLineKeyHandler -Chord UpArrow -Function HistorySearchBackward
+
 # Helper functions
 Function touch {
     [CmdletBinding()]
@@ -10,11 +22,18 @@ Function touch {
 }
 
 # Environment variables
-# Locations
+## Locations
 $CHEZMOI_DIR = "$HOME/.local/share/chezmoi"
 
-# Default editor
-$ENV:EDITOR = 'vim'
+## Default editor
+$env:EDITOR = 'nvim'
+
+# Tools
+## zoxide
+Invoke-Expression (& {
+    $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
+    (zoxide init --hook $hook powershell | Out-String)
+})
 
 # Prompt
 Invoke-Expression (&starship init powershell)
