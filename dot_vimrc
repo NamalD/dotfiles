@@ -22,3 +22,6 @@ nnoremap <leader>e :Explore<CR>
 " Relative line numbers
 set number
 set relativenumber
+
+" Case sensitivity
+:set smartcase
