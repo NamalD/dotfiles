@@ -7,6 +7,7 @@ show_notifications = true
 
 [kubernetes]
 disabled = false
+style = 'blue bold'
 
 [status]
 disabled = true
